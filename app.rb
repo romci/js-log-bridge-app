@@ -3,7 +3,7 @@ require 'sinatra/cross_origin'
 
 # cross origin setup
 register Sinatra::CrossOrigin
-set :allow_origin,  [ENV['APP_URL']]
+set :allow_origin,  :any
 set :allow_methods, [:get, :post, :options]
 
 get '/' do
